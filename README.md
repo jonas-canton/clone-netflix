@@ -8,3 +8,5 @@ Tecnologias aplicadas:
 - CSS3 (com Flexbox e responsividade);
 - jQuery para a criação do carrossel de filmes;
 - JavaScript para animação do scroll no header da página.
+
+Página hospedada no GitHub Pages: https://github.com/jonas-canton/clone-netflix
