@@ -1,0 +1,200 @@
+:root {
+  --red: #E50914;
+  --black: #141414;
+  --gray: #AAA;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--black);
+  font-family: 'Roboto', sans-serif;
+  color: white;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 80px;
+  z-index: 10;
+  display: flex;
+  background-image: linear-gradient(to bottom, rgba(0,0,0,.7) 10%, rgba(0,0,0,0));
+  transition: .5s ease all;
+}
+
+header.scrolling-on {
+  background-color: var(--black);
+}
+
+header.scrolling-off {
+  background-image: linear-gradient(to bottom, rgba(0,0,0,.7) 10%, rgba(0,0,0,0));
+}
+
+header .container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header .logo {
+  color: var(--red);
+  font-size: 40px;
+  margin-left: 10px;
+  font-weight: bold;
+}
+
+header nav {
+  margin-right: 15px;
+  font-weight: bold;
+}
+
+header nav a {
+  text-decoration: none;
+  color: var(--gray);
+  margin-right: 15px;
+}
+
+header nav a:hover {
+  color: white;
+}
+
+.main-movie {
+  font-size: 16px;
+  background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5) 100%), url('/img/matrix_capa.jpg');
+
+  height: 700px;
+  background-size: cover;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.main-movie .description {
+  margin-top: 10px;
+  margin-bottom: 40px;
+}
+
+.main-movie .title {
+  margin-top: 15%;
+  font-size: 40px;
+}
+
+.button {
+  background-color: rgba(0, 0, 0, .50);
+  border: none;
+  color: white;
+  padding: 15px 30px;
+  margin-right: 15px;
+  font-size: 15px;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: .3s ease all;
+}
+
+.button:hover {
+  background-color: white;
+  color: black;
+}
+
+.button i {
+  margin-right: 8px;
+}
+
+.container {
+  margin-left: 20px;
+}
+
+.main-movie .container {
+  width: 70%;
+}
+
+.box-movie {
+  height: 100%;
+  width: 100%;
+  display: block;
+}
+
+.carousel-movies {
+  margin-top: 50px;
+}
+
+.carousel-movies .category {
+  font-weight: bold;
+  font-size: 1.5rem;
+  display: block;
+  margin-bottom: 15px;
+}
+
+.carousel-movies img  {
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+footer {
+  margin-top: 150px;
+  margin-bottom: 10px;
+  font-size: 13px;
+  color: var(--gray);
+}
+
+footer .container {
+  max-width: 980px;
+  margin: 0 auto;
+}
+
+footer .social-media {
+  display: flex;
+  font-size: 30px;
+  list-style: none;
+}
+
+footer .social-media li {
+  margin-right: 30px;
+}
+
+footer .social-media a {
+  text-decoration: none;
+  color: white;
+}
+
+footer .links {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  margin-top: 10px;
+}
+
+footer .links li {
+  width: 200px;
+  margin-bottom: 10px;
+}
+
+footer .links a {
+  text-decoration: none;
+  color: var(--gray);
+}
+
+footer button {
+  margin: 20px 0;
+  cursor: pointer;
+  padding: 7px;
+  border-radius: 0;
+  color: var(--gray);
+  border: 1px solid;
+  border-color: var(--gray);
+  background-color: var(--black);
+}
+
+footer button:hover {
+  color: white;
+}
